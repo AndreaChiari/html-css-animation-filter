@@ -184,6 +184,97 @@
 }
 
 
+
+
+.ex-13-tp-white{
+    animation: rotationtop 3s linear;
+}
+
+.ex-13-bottom-white{
+    animation: rotationbottom 3s linear;
+}
+/* es.13 */
+
+
+@keyframes rotationbottom {
+   0%{
+        bottom: -10px;
+        right: 20%;
+   } 
+   20%{
+        bottom: -10px;
+        right: 75%;
+        
+    }
+    40%{
+        bottom: 50px;
+        right: 75%;
+        
+    }
+    60%{
+        bottom:50px;
+        right: 0%;
+    }
+    }
+    
+}
+
+
+@keyframes rotationtop {
+   0%{
+        top: -10px;
+        left: 10%;
+   } 
+   20%{
+         top: -10px;
+         left: 100%;
+    
+    }
+    40%{
+        top: 50px;
+        left: 100%;
+   }
+    60%{
+        top:50px;
+        left:-10px;
+    }
+
+    80%{
+        top:-10px;
+        left:-10px;
+    }
+100%{
+    top: -10px;
+        left: 10%;
+}
+
+.ex-13-top-white{
+    animation: rotationtop 3s linear;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* es12 */
 
 
