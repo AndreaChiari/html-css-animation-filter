@@ -155,6 +155,7 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+   
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -163,4 +164,34 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+
+/* es12 */
+
+
+
+.ex-12-top-white{
+    animation: topspace12  5s linear;
+}
+
+.ex-12-bottom-white{
+
+    animation: bottomspace12  5s linear;
+}
+
+@keyframes topspace12 {
+    100%{
+        top: -10px;
+        left: 80%;
+    }
+    
+}
+
+@keyframes bottomspace12 {
+    100%{
+        bottom: -10px;
+        right: 70%;
+    }
+    
 }
