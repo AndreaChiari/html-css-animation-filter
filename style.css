@@ -39,6 +39,15 @@
     width: 100px;
     height: 100px;
     background: red;
+    animation: disappear 3s;
+}
+
+@keyframes disappear{
+100% {top: 0;
+   background-color: rgb(245,245,245)
+}
+
+
 }
 .ex-5-square {
     margin: 20px;
