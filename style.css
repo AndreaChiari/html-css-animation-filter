@@ -41,6 +41,10 @@
     background: red;
     animation: disappear 3s;
 }
+.ex-4-square:hover{
+    transition: 5s;
+    background-color:rgb(245,245,245) ;
+}
 
 @keyframes disappear{
 100% {
@@ -54,17 +58,24 @@
     width: 60px;
     height: 60px;
     background: red;
+   
+   
 }
 .ex-5-square:hover{
-    width: 120px;
-    height: 120px;
-
+    transition: 3s;
+    width: 300px;
+    height: 300px;
 }
 .ex-5-square:active{
-    width: 30px;
-    height: 30px;
-
+   width: 20px;
+   height: 20px;
+   transition: 3s;
 }
+
+
+
+
+
 
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
@@ -85,7 +96,7 @@
 .ex-8-img:hover{
     filter: grayscale(100%);
     width: 1000px;
-    border-radius: 50%;
+    border-radius: 30px 30px 30px 30px;
     transition: 5s;
     height: 100px;
 }
@@ -184,16 +195,46 @@
 }
 
 
+/* es12 */
 
+
+.ex-12-top-white{
+   
+    animation: topspace12 5s; 
+
+}
+
+.ex-12-bottom-white{
+    
+    animation: bottomspace12 5s;
+}
+
+@keyframes topspace12 {
+   
+    100%{
+        top: -10px;
+        left: 80%;
+    }
+    
+}
+
+@keyframes bottomspace12 {
+    100%{
+        bottom: -10px;
+        right: 70%;
+    }
+    
+}
+
+/* es.13 */
 
 .ex-13-top-white{
-    animation: rotationtop 3s linear;
+    animation: rotationtop 6s linear;
 }
 
 .ex-13-bottom-white{
-    animation: rotationbottom 3s linear;
+    animation: rotationbottom 6s linear;
 }
-/* es.13 */
 
 
 @keyframes rotationbottom {
@@ -226,41 +267,35 @@
     
     }
     
-
-
-
-@keyframes rotationtop {
-   0%{
-        top: -10px;
-        left: 10%;
-   } 
-   20%{
-         top: -10px;
-         left: 100%;
+    @keyframes rotationtop {
+       0%{
+            top: -10px;
+            left: 10%;
+       } 
+       20%{
+             top: -10px;
+             left: 100%;
+        
+        }
+        40%{
+            top: 50px;
+            left: 100%;
+       }
+        60%{
+            top:50px;
+            left:-10px;
+        }
+    
+        80%{
+            top:-10px;
+            left:-10px;
+        }
+        100%{
+            top: -10px;
+            left: 10%;
+    }
     
     }
-    40%{
-        top: 50px;
-        left: 100%;
-   }
-    60%{
-        top:50px;
-        left:-10px;
-    }
-
-    80%{
-        top:-10px;
-        left:-10px;
-    }
-    100%{
-        top: -10px;
-        left: 10%;
-}
-
-.ex-13-top-white{
-    animation: rotationtop 3s linear;
-}
-}
 
 
 
@@ -284,31 +319,6 @@
 
 
 
-/* es12 */
 
 
 
-.ex-12-top-white{
-    animation: topspace12  5s linear;
-}
-
-.ex-12-bottom-white{
-
-    animation: bottomspace12  5s linear;
-}
-
-@keyframes topspace12 {
-    100%{
-        top: -10px;
-        left: 80%;
-    }
-    
-}
-
-@keyframes bottomspace12 {
-    100%{
-        bottom: -10px;
-        right: 70%;
-    }
-    
-}
