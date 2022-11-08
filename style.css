@@ -72,6 +72,14 @@
 
 .ex-6-img:hover{
     filter: grayscale(100%);
+
+}
+
+.ex-7-img:hover{
+    filter: grayscale(100%);
+    width: 1000px;
+    border-radius: 50%;
+    transition: 5s;
 }
 
 
