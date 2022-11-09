@@ -52,24 +52,21 @@
 }
 
 
+
 }
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
-   
-   
 }
 .ex-5-square:hover{
     transition: 3s;
-    width: 300px;
-    height: 300px;
+    scale: 2;
 }
 .ex-5-square:active{
-   width: 20px;
-   height: 20px;
-   transition: 3s;
+    scale: -1;
+    transition: 3s;
 }
 
 
@@ -198,15 +195,15 @@
 /* es12 */
 
 
-.ex-12-top-white{
+.ex-12-button:hover .ex-12-top-white{
    
-    animation: topspace12 5s; 
+    animation: topspace12 5s linear; 
 
 }
 
-.ex-12-bottom-white{
+ .ex-12-button:hover .ex-12-bottom-white{
     
-    animation: bottomspace12 5s;
+    animation: bottomspace12 5s linear;
 }
 
 @keyframes topspace12 {
@@ -228,11 +225,11 @@
 
 /* es.13 */
 
-.ex-13-top-white{
+ .ex-13-button:hover .ex-13-top-white{
     animation: rotationtop 6s linear;
 }
 
-.ex-13-bottom-white{
+ .ex-13-button:hover .ex-13-bottom-white{
     animation: rotationbottom 6s linear;
 }
 
@@ -242,7 +239,7 @@
         bottom: -10px;
         right: 20%;
    } 
-   20%{
+    20%{
         bottom: -10px;
         right: 75%;
         
@@ -280,12 +277,11 @@
         40%{
             top: 50px;
             left: 100%;
-       }
+        }
         60%{
             top:50px;
             left:-10px;
         }
-    
         80%{
             top:-10px;
             left:-10px;
@@ -294,8 +290,9 @@
             top: -10px;
             left: 10%;
     }
-    
+        
     }
+    
 
 
 
